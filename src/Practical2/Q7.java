@@ -12,15 +12,25 @@ import javax.swing.JOptionPane;
 
 public class Q7 {
 
-	public static void main(String[] args) {
+	private static Double getHeight() {
 		Double height = Double.parseDouble(JOptionPane.showInputDialog("Enter the height"));
+		return height;
+	}
+
+	private static Double getWidth(){	
 		Double width = Double.parseDouble(JOptionPane.showInputDialog("Enter the width"));
-		
+		return width;
+	}
+
+	public static void main(String[] args) {
+		Double height = getHeight();
+		Double width = getWidth();
+
 		String output = "Summary of Rectangle measurements\n"
-			+ "Height:    "+height+"\n"
-			+ "Width:     "+width+"\n"
-			+ "Area:      "+height*width+"\n"
-			+ "Perimeter: "+(2*height+2*width)+"\n";
+			+ "Height:    " + height + "\n"
+			+ "Width:     " + width + "\n"
+			+ "Area:      " + height * width + "\n"
+			+ "Perimeter: " + (2 * height + 2 * width) + "\n";
 
 		JOptionPane.showMessageDialog(null, output);
 	}
