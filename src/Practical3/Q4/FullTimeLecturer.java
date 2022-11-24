@@ -30,6 +30,7 @@ public class FullTimeLecturer extends Lecturer {
 		for (int size : classSize) {
 			result += size * 10;
 		}
+		return result;
 	}
 
 }

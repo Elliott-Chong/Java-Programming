@@ -1,6 +1,5 @@
 package Practical3.Q4;
 
-import <any?>;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -21,6 +20,7 @@ public class PartTimeLecturer extends Lecturer {
 		this.monthlyHour = monthlyHour;
 	}
 
+	@Override
 	public double calcMonthlyPay(){
 		return hourlyRate * monthlyHour;
 	}
