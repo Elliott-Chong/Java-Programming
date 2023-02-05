@@ -1,0 +1,6 @@
+0.05
+Plain, 100
+Wholemeal, 200
+Raisin, 300
+Banana, 400
+Corn, 500
